@@ -48,7 +48,9 @@ app.post("/compose", function(req,res){
   res.redirect("/");
 });
 
-
+app.post("/", function(req,res){
+  console.log(res); 
+});
 app.get("/",function(req,res){
   res.render("home",
   {
